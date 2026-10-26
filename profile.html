@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Main Card Container */
+        div {
+            width: 300px;
+            background-color: #f4f4f4;
+            /* Gray ki jagah thoda light aur clean color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Card ko 3D look dene ke liye shadow */
+
+            /* Flexbox for centering */
+            display: flex;
+            flex-direction: column;
+            /* Items ko ek ke niche ek lane ke liye */
+            align-items: center;
+            /* Center align karne ke liye */
+            gap: 10px;
+            /* Har item ke beech thoda space */
+        }
+
+        /* Profile Image */
+        img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            /* Agar photo square nahi hai, toh use stretch hone se rokne ke liye */
+        }
+
+        /* Paragraph (Bio) */
+        p {
+            color: #555;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        /* Follow Button */
+        button {
+            background-color: #007bff;
+            /* Blue color */
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            /* Gol button */
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button{
+            transition: 1s;
+        }
+        button:hover {
+            background-color: #0056b3;
+            /* Hover karne par dark blue */
+        }
+        div{
+            transition: 1s;
+        }
+        div:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D alt="">  
+        <h2>Name</h2>
+        <input type=" text" placeholder="Enter your Bio">
+        <button>Follow</button>
+    </div>
+</body>
+
+</html>

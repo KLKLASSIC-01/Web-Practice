@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;         /* Allows cards to go to the next line if space is low */
+            justify-content: center; /* Centers all cards horizontally */
+            background-color: #e9ecef; /* Halka grey background for contrast */
+            padding: 20px;
+            gap: 20px;               /* Cards ke beech equal space */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Class use karna better hai sirf 'div' likhne se */
+        .card {
+            width: 250px;
+            background-color: #ffffff; /* Clean white card */
+            color: black;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            border-radius: 12px;     /* Card ke kinare gol karne ke liye */
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Normal shadow */
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Hover par dark shadow */
+        }
+
+        img {
+            width: 100%;
+            height: 200px;           /* Sabhi images ko ek fix height de di */
+            object-fit: cover;       /* Image stretch na ho */
+            border-radius: 8px;      /* Image ke kinare bhi halke gol */
+        }
+
+        h3 {
+            font-size: 14px;
+            color: #333;
+            margin: 12px 0 5px 0;
+            line-height: 1.4;
+            /* Lamba text 2 lines me cut ho jayega */
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #b12704;          /* E-commerce style price color */
+            margin: 5px 0 15px 0;
+        }
+
+        button {
+            font-weight: bold;
+            font-size: 15px;
+            background-color: #0056b3;
+            color: white;
+            border: none;            /* Default outline hatane ke liye */
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: auto;        /* Button hamesha card ke bottom me rahega */
+        }
+
+        button:hover {
+            background-color: #003d82; /* Hover par aur dark blue */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://redtape.com/cdn/shop/files/RSO4863_1.jpg?v=1786010846" alt="Sports Shoe">
+        <h3>Sports Shoes for Men in Blue | Athleisure Shoes Redtape</h3>
+        <h2>₹1,999</h2>
+        <button>Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/w/l/o/9-ytckd2c24m-9-yoho-white-watermarked-original-imahk7hzacfgbpnz.jpeg?q=70" alt="White Shoe">
+        <h3>yoho RushHour Dynamiq™ 1800|EVA Sole | Lightweight & Cushioned |AntiSkid LaceUp Shoe Walking Shoes For Men (White , 9)</h3>
+        <h2>₹1,199</h2>
+        <button>Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/z/x/2/9-ytckd2c58m-9-yoho-black-ice-watermarked-original-imahk8jfwyq9smha.jpeg?q=70" alt="Black Shoe">
+        <h3>yoho RushHour Dynamiq™ 1800|EVA Sole | Lightweight & Cushioned |AntiSkid LaceUp Shoe Walking Shoes For Men (Black , 6)</h3>
+        <h2>₹999</h2>
+        <button>Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/w/8/u/-watermarked-original-imahfhpszaagdb37.jpeg?q=70" alt="Black Running Shoe">
+        <h3>action Light Weight|Comfortable|Trendy|+Breathable|Gym|walking Running Shoes For Men (Black , 6)</h3>
+        <h2>₹699</h2>
+        <button>Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="https://rukminim2.flixcart.com/image/2940/2940/xif0q/shoe/b/l/w/-watermarked-original-imahegzpd98chnre.jpeg?q=90" alt="Green Sneakers">
+        <h3>JQR RUMBA Sneakers For Men (Green , 10)</h3>
+        <h2>₹599</h2>
+        <button>Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="https://rukminim2.flixcart.com/image/2940/2940/xif0q/shoe/u/d/c/6-art-ca801-6-0-vellinto-brown-original-imahqzyexbzkhfzj.jpeg?q=90">
+        <h3>Vellinto VEGA Casual Derby Boots For Men ll Stylish Semi Formal Boots For Men Casuals For Men (Brown , 7)</h3>
+        <h2>₹649</h2>
+        <button>Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="https://rukminim2.flixcart.com/image/2940/2940/xif0q/shoe/e/l/j/7-drive-43-7-action-black-original-imahrvupzsfjudkb.jpeg?q=90">
+        <h3>action DOTCOM DRIVE-43 Trendy Comfortable Durable Casual Slip-On Loafers For Men (Black , 9)</h3>
+        <h2>₹549</h2>
+        <button>Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="https://rukminim2.flixcart.com/image/2940/2940/xif0q/shoe/n/t/l/8-drive-43-tan-8-8-action-tan-original-imahrvupdhgvkhpx.jpeg?q=90">
+        <h3>action DOTCOM DRIVE-43 Trendy Comfortable Durable Casual Slip-On Loafers For Men (Black , 9)</h3>
+        <h2>₹499</h2>
+        <button>Add to Cart</button>
+    </div>
+</body>
+</html>
